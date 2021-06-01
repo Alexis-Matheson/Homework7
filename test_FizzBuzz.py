@@ -2,12 +2,16 @@
 
 import unittest
 
-# import FizzBuzz
+import FizzBuzz
 
 
 class TestNumber(unittest.TestCase):
     def test_checknum(self):
-        self.assertEqual(FizzBuzz.checknum(3), "Buzz")
+        self.assertEqual(FizzBuzz.checknum(3), "Fizz")
+        self.assertEqual(FizzBuzz.checknum(5), "Buzz")
+
+    def test_checknum(self):
+        self.assertEqual(FizzBuzz.checknum(2), 2)
 
 
 if __name__ == "__main__":
