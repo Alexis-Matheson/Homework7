@@ -2,12 +2,15 @@
 
 import unittest
 
-# import Leapyear
+import Leapyear
 
 
 class TestNumber(unittest.TestCase):
     def test_leapyear(self):
-        self.assertEqual(Leapyear.checkyear(2000), False)
+        self.assertEqual(Leapyear.checkyear(2000), True)
+
+    def test_Leapyear(self):
+        self.assertEqual(Leapyear.checkyear(2003), False
 
 
 if __name__ == "__main__":
